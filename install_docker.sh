@@ -8,4 +8,9 @@ apt-get update
 apt-get install lxc-docker -y
 # Try something like
 # sudo docker run ubuntu /bin/bash
-# To do away typing sudo before every docker command run the docker-no-sudo.sh file as the home user. 
+
+# To do away with typing of sudo before every docker command 
+# run these two commands on your shell prompt interactively
+# sudo gpasswd -a ${USER} docker
+# sudo service docker restart
+ 
