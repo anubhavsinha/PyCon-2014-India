@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<title>My Application</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="static/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="static/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="static/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body class="container">
+<h1>PyCon 2014, India</h1>
+<div class="row">
+<form class="form-horizontal" role="form" action="/search" method="GET">
+  <div class="form-group">
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="search-box" placeholder="Search here ..." name="q">
+    </div>
+
+    <input type="submit" class="btn btn-default" value="Go">
+  </div>
+</form>
+
+</div>
+<div class="row well">
+<form action="/index" method="POST">
+<div class="form-group">
+Add Data:<textarea class="form-control" rows="3" name="a"></textarea>
+</div>
+<input type="submit" class="btn btn-success" value="Index this!">
+</form>
+</div>
+</body>
+</html>
